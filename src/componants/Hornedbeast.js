@@ -30,7 +30,7 @@ constructor(props){
     render() {
 
         return (
-
+            
             <section>
                 {/*         
                    <img src={this.props.imgURL} alt='my first one'></img>
@@ -38,7 +38,7 @@ constructor(props){
                     <p>this.props.description</p> */}
 
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img onClick={this.increaseNumOfClick} variant="top" src={this.props.image_url} />
+                    <Card.Img  onClick={this.increaseNumOfClick} variant="top" src={this.props.image_url} />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>

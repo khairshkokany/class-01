@@ -2,10 +2,11 @@
   text-align: center;
 }
 
-img {
+image {
 
-  width: 20%;
-
+  width: 100%;
+  height: 100%;
+padding: 20%;
 }
 
 section {
@@ -14,4 +15,5 @@ section {
  border-width: 30px;
  border-color: brown;
  display: inline-block;
+ width: auto;
  }
