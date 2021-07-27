@@ -7,43 +7,35 @@ import './App.css';
 import SelectBeast from './componants/SelectBeast';
 
 
-
 class App extends React.Component {
 
 
   constructor (props){
     super(props);
     this.state ={
-      title : 'tit',
-      image_url :'imgu',
-      description : 'des',
+     
       show:false,
     }
 
   }
 
-  modalData = (title, image_url, description) => {
+  modalData = (title, img_Url, description,show) => {
     this.setState({
       title: title,
-      url: image_url,
+      img_Url: img_Url,
       description: description,
+      show:show
     });
   };
 
-  handleShow = () => {
+  handleShow = show => {
 
     this.setState({
 
-      show:true,
+      show:show,
     })
   }
 
-handleHide = ()=> {
-  this.setState({
-
-    show:false,
-  })
-}
 
 
 
@@ -57,9 +49,9 @@ handleHide = ()=> {
   <SelectBeast 
 
   show= {this.state.show} 
-  hidden = {this.handleHide}
+  hidden = {this.handleShow}
   title = {this.state.title}
-  image_url = {this.state.image_url}
+  img_Url = {this.state.img_Url}
   description = {this.state.description}
   
   

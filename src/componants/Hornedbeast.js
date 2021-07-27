@@ -15,7 +15,7 @@ constructor(props){
     super(props);
     this.state = {
         numOfClick : 0
-    }
+    };
 
 }
 
@@ -30,7 +30,7 @@ constructor(props){
 
         }
         dataToModal = () => {
-                this.props.modalData(this.props.title , this.props.image_url,this.props.description,true)
+                this.props.modalData(this.props.title , this.props.img_Url,this.props.description,true)
 
         }
 
@@ -51,7 +51,7 @@ constructor(props){
                 >
                     <Card.Img
                     onClick={this.dataToModal} 
-                    on variant="top" src={this.props.image_url} />
+                    on variant="top" src={this.props.img_Url} />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>

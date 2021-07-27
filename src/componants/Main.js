@@ -27,7 +27,7 @@ class Main extends React.Component {
                     return (
 
                         <Hornedbeast 
-                        image_url={element.image_url} 
+                        img_Url={element.image_url} 
                         title={element.title} 
                         description={element.description}
                         modalData = {this.props.modalData}

@@ -19,13 +19,13 @@ class SelectBeast extends React.Component {
             <>
 
 
-                <Modal show={this.props.showModal} onHide={this.exitModal}>
+                <Modal show={this.props.show} onHide={this.exitModal}>
                     <Modal.Header closeButton>
                         <Modal.Title>{this.props.title}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <img
-                            src={this.props.image_url}
+                            src={this.props.img_Url}
                             alt={this.props.title}
                         />
                         <p>{this.props.description}
