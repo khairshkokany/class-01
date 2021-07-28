@@ -9,9 +9,7 @@ import Button from 'react-bootstrap/Button'
 
 class SelectBeast extends React.Component {
 
-    exitModal = () =>{
-        this.props.hidden(false)
-    }
+  
     render() {
 
         return (
@@ -19,7 +17,7 @@ class SelectBeast extends React.Component {
             <>
 
 
-                <Modal show={this.props.show} onHide={this.exitModal}>
+                <Modal show={this.props.show} onHide={this.props.hidden}>
                     <Modal.Header closeButton>
                         <Modal.Title>{this.props.title}</Modal.Title>
                     </Modal.Header>
@@ -32,7 +30,7 @@ class SelectBeast extends React.Component {
                         </p>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={this.exitModal}>
+                        <Button variant="secondary" onClick={this.props.hidden}>
                             Close
                         </Button>
                         
