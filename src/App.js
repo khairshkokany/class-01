@@ -19,20 +19,20 @@ class App extends React.Component {
 
   }
 
-  modalData = (title, img_Url, description,show) => {
+  modalData = (title, img_Url, description) => {
     this.setState({
       title: title,
       img_Url: img_Url,
       description: description,
-      show:show
+      show:true
     });
   };
 
-  handleShow = show => {
+  handleShow = () => {
 
     this.setState({
 
-      show:show,
+      show:false,
     })
   }
 
