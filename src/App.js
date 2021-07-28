@@ -5,6 +5,7 @@ import Footer from './componants/Footer';
 import data from './componants/assests/data.json'
 import './App.css';
 import SelectBeast from './componants/SelectBeast';
+// import FilterJava from './componants/FilterJava';
 
 
 class App extends React.Component {
@@ -15,6 +16,8 @@ class App extends React.Component {
     this.state ={
      
       show:false,
+      // dataList:data
+
     }
 
   }
@@ -24,9 +27,10 @@ class App extends React.Component {
       title: title,
       img_Url: img_Url,
       description: description,
-      show:true
+      show:true,
     });
   };
+
 
   handleShow = () => {
 
@@ -35,6 +39,25 @@ class App extends React.Component {
       show:false,
     })
   }
+
+//   filterData = (items) => {
+//     //eslint-disable-next-line
+//     let newArr = data.filter(item => {
+
+//         if (item.horns === Number(items)){
+
+//           return (item);
+          
+//         }else if (items === 'all') {
+//           return item;
+//         }
+      
+//     });
+//     console.log(newArr)
+  
+//     this.setState({dataList:newArr});
+// };
+
 
 
 
@@ -45,6 +68,16 @@ class App extends React.Component {
 
 <>
   <Header />
+
+  <div>
+
+{/* <FilterJava
+
+    fil={this.filterData}
+    
+/> */}
+
+</div>
 
   <SelectBeast 
 
